@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Kalkulator Adel</string>
+    <string name="btn_tombol">Tombol</string>
+    <string name="klik">Clicked</string>
+    <string name="hint1">Isi Angka 1</string>
+    <string name="hint2">Isi Angka 2</string>
+
+    <string-array name="listKota">
+        <item>Malang</item>
+        <item>Batu</item>
+        <item>Lumajang</item>
+        <item>Tuban</item>
+        <item>Nganjuk</item>
+        <item>Tegal</item>
+        <item>Balikpapan</item>
+        <item>Banyuwangi</item>
+        <item>Bojonegoro</item>
+        <item>Ngawi</item>
+        <item>Tangerang</item>
+        <item>Jakarta</item>
+    </string-array>
+</resources>

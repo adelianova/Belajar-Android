@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.InputBottomSheetFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/namaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama" />
+
+
+        <EditText
+            android:id="@+id/alamatEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat"
+            android:minLines="3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="05 11 2000" />
+
+            <ImageView
+                android:id="@+id/imageView_date"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_date_range_24dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/inputFormBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="submit" />
+
+    </LinearLayout>
+
+</FrameLayout>

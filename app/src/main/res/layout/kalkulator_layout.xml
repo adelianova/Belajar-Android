@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/angka1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angka 1" />
+
+    <EditText
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angka1"
+        android:hint="@string/hint1"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/angka2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a"
+        android:text="Angka 2" />
+
+    <EditText
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angka2"
+        android:hint="@string/hint2"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/kurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tambah"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/kali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b"
+        android:layout_toRightOf="@id/tambah"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/bagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kali"
+        android:layout_toRightOf="@id/kurang"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kurang" />
+</RelativeLayout>

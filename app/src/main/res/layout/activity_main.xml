@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Nama" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_name"
+        android:hint="Isi Nama Anda " />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_tombol" />
+
+    <TextView
+        android:id="@+id/text_view_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit1"
+        android:text="Gender" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_gender">
+
+        <RadioButton
+            android:id="@+id/radioLaki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Laki-Laki" />
+
+        <RadioButton
+            android:id="@+id/radioPerempuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_view_mkn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:text="Makanan Favorit" />
+
+    <CheckBox
+        android:id="@+id/nasgor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_mkn"
+        android:text="Nasi Goreng" />
+
+    <CheckBox
+        android:id="@+id/mi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nasgor"
+        android:text="Mie Ayam" />
+
+    <CheckBox
+        android:id="@+id/capjay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mi"
+        android:text="Capjay" />
+
+    <TextView
+        android:id="@+id/text_view_kota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capjay"
+        android:text="Kota" />
+
+    <Spinner
+        android:id="@+id/kota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_kota"
+        android:entries="@array/listKota"></Spinner>
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kota" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggle" />
+
+    <Button
+        android:id="@+id/btn_tombol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch1"
+        android:text="@string/btn_tombol" />
+
+</RelativeLayout>
