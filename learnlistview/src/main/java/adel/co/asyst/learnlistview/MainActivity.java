@@ -1,7 +1,10 @@
 package adel.co.asyst.learnlistview;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,7 +15,7 @@ import java.util.ArrayList;
 import adel.co.asyst.learnlistview.adapter.PersonAdapter;
 import adel.co.asyst.learnlistview.model.Person;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemLongClickListener, AdapterView.OnItemClickListener {
 
     ListView listView;
     EditText nameET;
@@ -45,8 +48,21 @@ public class MainActivity extends AppCompatActivity {
         //arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, nama);
         listView.setAdapter(personAdapter);
 
-//        listView.setOnItemLongClickListener(this);
+        listView.setOnItemClickListener(this);
+        //  listView.setOnItemLongClickListener(this);
 //        addbtn.setOnClickListener(this);
+    }
+
+    @Override
+    public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+        return false;
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+        intent.putExtra("name", listPerson.get(position));
+        startActivity(intent);
     }
 
 

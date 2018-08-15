@@ -1,1 +1,1 @@
-include ':app', ':learnfragment', ':pizzaorderfragment', ':learnlistview'
+include ':app', ':learnfragment', ':pizzaorderfragment', ':learnlistview', ':learnrecycleview', ':learnsession'

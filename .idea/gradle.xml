@@ -11,6 +11,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/learnfragment" />
             <option value="$PROJECT_DIR$/learnlistview" />
+            <option value="$PROJECT_DIR$/learnrecycleview" />
+            <option value="$PROJECT_DIR$/learnsession" />
             <option value="$PROJECT_DIR$/pizzaorderfragment" />
           </set>
         </option>
